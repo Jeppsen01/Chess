@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function dragStart(event) {
         let piece = event.target;
-        if (piece.dataset.color !== chessGame.turn) {
+        if (piece.dataset.color !== validator.turn) {
             console.warn("Ikke din tur!");
             event.preventDefault();
             return;
